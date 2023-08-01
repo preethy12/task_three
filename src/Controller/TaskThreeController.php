@@ -14,11 +14,11 @@ final class TaskThreeController extends ControllerBase {
    */
   public function content() {
 
-    // $form = $this->formBuilder->getForm('Drupal\task_three\Form\TaskThreeForm');
-    //     return [
-    //       '#type' => 'markup',
-    //       '#markup' => $form
-    //     ];
+    $form = $this->formBuilder->getForm('Drupal\task_three\Form\TaskThreeForm');
+        return [
+          '#type' => 'markup',
+          '#markup' => $form
+        ];
   }
 
 }

@@ -1,6 +1,7 @@
 task_three.example:
   path: '/node/{node}/details'
   defaults:
+    _form: '\Drupal\add_performance\Form\myForm'
     _title: 'Example'
     _controller: '\Drupal\task_three\Controller\TaskThreeController::content'
   requirements:
@@ -14,5 +15,5 @@ My_Module.form:
   defaults:
     _form: '\Drupal\task_three\Form\TaskThreeForm'
     _title: 'Nodes'
-  requirements:
-    _permission: 'access content'
+  # requirements:
+  #   _permission: 'access content'

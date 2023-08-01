@@ -1,0 +1,18 @@
+task_three.example:
+  path: '/node/{node}/details'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\task_three\Controller\TaskThreeController::content'
+  requirements:
+    _permission: 'Static permission'
+  options:
+    _admin_route: TRUE
+
+
+My_Module.form:
+  path: '/task_three_form'
+  defaults:
+    _form: '\Drupal\task_three\Form\TaskThreeForm'
+    _title: 'Nodes'
+  requirements:
+    _permission: 'access content'
